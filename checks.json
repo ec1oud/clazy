@@ -200,6 +200,13 @@
             "categories" : ["deprecation"]
         },
         {
+            "name"  : "qevent-accessors",
+            "level" : 0,
+            "minimum_qt_version" : 60000,
+            "categories" : ["deprecation"],
+            "visits_stmts" : true
+        },
+        {
             "name"  : "qmap-with-pointer-key",
             "level" : 0,
             "categories" : ["containers", "performance"],

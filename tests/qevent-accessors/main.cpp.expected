@@ -1,0 +1,1 @@
+qevent-accessors/main.cpp:11:32: warning: Replace the deprecated call QMouseEvent::pos(): use position().toPoint() instead [-Wclazy-qevent-accessors]
