@@ -34,6 +34,7 @@ set(CLAZY_CHECKS_SRCS ${CLAZY_CHECKS_SRCS}
   ${CMAKE_CURRENT_LIST_DIR}/src/checks/level0/qcolor-from-literal.cpp
   ${CMAKE_CURRENT_LIST_DIR}/src/checks/level0/qdatetime-utc.cpp
   ${CMAKE_CURRENT_LIST_DIR}/src/checks/level0/qenums.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/src/checks/level0/qevent-accessors.cpp
   ${CMAKE_CURRENT_LIST_DIR}/src/checks/level0/qfileinfo-exists.cpp
   ${CMAKE_CURRENT_LIST_DIR}/src/checks/level0/qgetenv.cpp
   ${CMAKE_CURRENT_LIST_DIR}/src/checks/level0/qmap-with-pointer-key.cpp

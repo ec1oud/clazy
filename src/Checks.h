@@ -62,6 +62,7 @@
 #include "checks/level0/qcolor-from-literal.h"
 #include "checks/level0/qdatetime-utc.h"
 #include "checks/level0/qenums.h"
+#include "checks/level0/qevent-accessors.h"
 #include "checks/level0/qfileinfo-exists.h"
 #include "checks/level0/qgetenv.h"
 #include "checks/level0/qmap-with-pointer-key.h"
@@ -163,6 +164,8 @@ void CheckManager::registerChecks()
     registerCheck(check<QDateTimeUtc>("qdatetime-utc", CheckLevel0,  RegisteredCheck::Option_VisitsStmts));
     registerFixIt(1, "fix-qdatetime-utc", "qdatetime-utc");
     registerCheck(check<QEnums>("qenums", CheckLevel0, RegisteredCheck::Option_Qt4Incompatible));
+    registerCheck(check<QEventAccessors>("qevent-accessors", CheckLevel0, RegisteredCheck::Option_Qt4Incompatible | RegisteredCheck::Option_VisitsStmts));
+    registerFixIt(1, "fix-qevent-accessors", "qevent-accessors");
     registerCheck(check<QFileInfoExists>("qfileinfo-exists", CheckLevel0,  RegisteredCheck::Option_VisitsStmts));
     registerCheck(check<QGetEnv>("qgetenv", CheckLevel0, RegisteredCheck::Option_Qt4Incompatible | RegisteredCheck::Option_VisitsStmts));
     registerFixIt(1, "fix-qgetenv", "qgetenv");
